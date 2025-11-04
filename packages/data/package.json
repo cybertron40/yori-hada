@@ -1,0 +1,33 @@
+{
+  "name": "@recipe-manager/data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "db:migrate": "drizzle-kit migrate",
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "@recipe-manager/core": "workspace:*",
+    "better-sqlite3": "^9.0.0",
+    "drizzle-orm": "^0.30.7",
+    "drizzle-kit": "^0.20.17",
+    "expo-sqlite": "^13.5.0",
+    "wa-sqlite": "^0.11.0",
+    "dexie": "^4.0.1",
+    "idb": "^7.1.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "tsup": "^7.3.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.5.0"
+  }
+}
