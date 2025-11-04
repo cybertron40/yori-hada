@@ -50,6 +50,8 @@ GitHub Actions pipelines (lint, test, build, e2e, release) are defined in `.gith
 
 Additional documentation lives in `docs/` (to be added) covering architecture, sync flows, security posture, and importer specifications.
 
+- `docs/acceptance.md` – acceptance criteria and stretch goals
+
 Please see the issue tracker for upcoming milestones including:
 
 1. End-to-end auth and sync flows
