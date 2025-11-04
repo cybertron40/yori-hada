@@ -1,0 +1,20 @@
+{
+  "name": "@recipe-manager/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.5.6"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.5.13",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.0"
+  }
+}

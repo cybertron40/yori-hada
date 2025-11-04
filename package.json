@@ -1,0 +1,29 @@
+{
+  "name": "recipe-manager-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "e2e": "turbo run e2e",
+    "typecheck": "turbo run typecheck",
+    "format": "turbo run format",
+    "start": "turbo run start",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md}": [
+      "pnpm format",
+      "pnpm lint --filter ...[origin/main]"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@recipe-manager/config/*": ["packages/config/*"],
+      "@recipe-manager/ui": ["packages/ui/src"],
+      "@recipe-manager/ui/*": ["packages/ui/src/*"],
+      "@recipe-manager/core": ["packages/core/src"],
+      "@recipe-manager/core/*": ["packages/core/src/*"],
+      "@recipe-manager/db": ["packages/db/src"],
+      "@recipe-manager/db/*": ["packages/db/src/*"],
+      "@recipe-manager/scraper": ["packages/scraper/src"],
+      "@recipe-manager/scraper/*": ["packages/scraper/src/*"],
+      "@recipe-manager/scripts": ["packages/scripts/src"],
+      "@recipe-manager/scripts/*": ["packages/scripts/src/*"]
+    }
+  }
+}

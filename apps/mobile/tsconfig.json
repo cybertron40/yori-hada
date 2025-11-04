@@ -1,0 +1,16 @@
+{
+  "extends": "@recipe-manager/config/tsconfig",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "types": ["nativewind/types", "react-native", "expo-router"],
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["app", "src", "index.ts", "index.tsx", "*.ts", "*.tsx"],
+  "exclude": ["node_modules"]
+}

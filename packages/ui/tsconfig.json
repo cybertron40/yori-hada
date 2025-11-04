@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@recipe-manager/config/tsconfig",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@recipe-manager/ui/*": ["src/*"]
+    }
+  },
+  "include": ["src"]
+}

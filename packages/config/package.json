@@ -1,0 +1,12 @@
+{
+  "name": "@recipe-manager/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint/index.cjs",
+    "./tailwind": "./tailwind/index.cjs",
+    "./prettier": "./prettier/index.cjs",
+    "./tsconfig": "./tsconfig/base.json"
+  }
+}

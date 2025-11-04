@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@recipe-manager/config/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@recipe-manager/db/*": ["src/*"]
+    }
+  },
+  "include": ["src", "drizzle.config.ts"]
+}
