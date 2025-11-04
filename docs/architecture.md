@@ -14,8 +14,8 @@
 | Clients | Web, Android, Windows desktop experiences | Next.js App Router, Expo Router, Tauri 1.x |
 | Shared UI | Consistent design system (shadcn/ui + Tailwind tokens) | `packages/ui` |
 | Domain/Core | Types, validators, sync primitives, business rules | `packages/core`, Zod |
-| Data Layer | Drizzle schema, SQLite/Postgres adapters, sync engine | `packages/data` |
-| Services | Auth, discovery crawler, nutrition enrichment, background jobs | Next.js server actions, QStash cron, Supabase/Fly.io |
+| Data Layer | Drizzle schema, SQLite/Postgres adapters, sync engine | `packages/db` |
+| Services | Auth, discovery crawler, nutrition enrichment, background jobs | `packages/scraper`, Next.js server actions, QStash cron, Supabase/Fly.io |
 | Tooling | CLI utilities, migrations, seeding, CI/CD | `packages/scripts`, GitHub Actions |
 
 ## Data Flow
@@ -78,7 +78,7 @@
 
 ## Outstanding Work
 
-- Implement platform-specific SQLite adapters inside `packages/data/src/local` (expo-sqlite, wa-sqlite, better-sqlite3).
+- Implement platform-specific SQLite adapters inside `packages/db/src/local` (expo-sqlite, wa-sqlite, better-sqlite3).
 - Build importer job queue and site adapter registry.
 - Wire NextAuth credentials + OAuth flows, integrate with Expo WebBrowser for mobile.
 - Create GitHub Actions workflows for lint/test/build/e2e/release.

@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@recipe-manager/data/*": ["src/*"]
+      "@recipe-manager/db/*": ["src/*"]
     }
   },
   "include": ["src", "drizzle.config.ts"]

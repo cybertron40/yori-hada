@@ -11,6 +11,7 @@
     "e2e": "turbo run e2e",
     "typecheck": "turbo run typecheck",
     "format": "turbo run format",
+    "start": "turbo run start",
     "prepare": "husky install"
   },
   "devDependencies": {

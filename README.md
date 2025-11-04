@@ -21,19 +21,20 @@ pnpm install
 
 - `pnpm dev` – run all apps in parallel via Turborepo
 - `pnpm --filter @recipe-manager/web dev` – Next.js web app
-- `pnpm --filter @recipe-manager/site dev` – Marketing site
+- `pnpm --filter @recipe-manager/marketing dev` – Marketing site
 - `pnpm --filter @recipe-manager/mobile start` – Expo mobile app
 - `pnpm --filter @recipe-manager/desktop dev` – Tauri desktop shell (requires the web app running on port 3000)
 
 ## Monorepo Structure
 
 - `apps/web` – Next.js application (authenticated experience)
-- `apps/site` – Next.js marketing site
+- `apps/marketing` – Next.js marketing site
 - `apps/mobile` – Expo/React Native client
 - `apps/desktop` – Tauri wrapper for the web app
 - `packages/ui` – shared component library built on Tailwind and shadcn/ui patterns
 - `packages/core` – domain models, validation schemas, sync primitives
-- `packages/data` – Drizzle ORM schema, sync helpers, platform adapters (SQLite + Postgres)
+- `packages/db` – Drizzle ORM schema, sync helpers, platform adapters (SQLite + Postgres)
+- `packages/scraper` – discovery crawler, import parsers, normalization utilities
 - `packages/scripts` – CLI utilities (seeders, migrations, automation)
 - `packages/config` – shared ESLint, Tailwind, Prettier, and tsconfig presets
 

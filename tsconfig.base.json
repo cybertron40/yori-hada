@@ -24,8 +24,10 @@
       "@recipe-manager/ui/*": ["packages/ui/src/*"],
       "@recipe-manager/core": ["packages/core/src"],
       "@recipe-manager/core/*": ["packages/core/src/*"],
-      "@recipe-manager/data": ["packages/data/src"],
-      "@recipe-manager/data/*": ["packages/data/src/*"],
+      "@recipe-manager/db": ["packages/db/src"],
+      "@recipe-manager/db/*": ["packages/db/src/*"],
+      "@recipe-manager/scraper": ["packages/scraper/src"],
+      "@recipe-manager/scraper/*": ["packages/scraper/src/*"],
       "@recipe-manager/scripts": ["packages/scripts/src"],
       "@recipe-manager/scripts/*": ["packages/scripts/src/*"]
     }

@@ -8,7 +8,7 @@
 | Android | `expo-sqlite` with WAL enabled | Device sandbox |
 | Desktop | `better-sqlite3` accessed through Tauri commands | App data directory |
 
-Each adapter implements the `LocalDatabase` interface exported from `packages/data`:
+Each adapter implements the `LocalDatabase` interface exported from `packages/db`:
 
 ```ts
 interface LocalDatabase {

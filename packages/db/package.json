@@ -1,5 +1,5 @@
 {
-  "name": "@recipe-manager/data",
+  "name": "@recipe-manager/db",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -23,6 +23,7 @@
     "wa-sqlite": "^0.11.0",
     "dexie": "^4.0.1",
     "idb": "^7.1.1",
+    "postgres": "^3.4.3",
     "zod": "^3.23.8"
   },
   "devDependencies": {
