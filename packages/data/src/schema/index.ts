@@ -7,7 +7,8 @@ import {
   boolean,
   numeric,
   jsonb,
-  date
+  date,
+  primaryKey
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
 

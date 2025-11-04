@@ -1,0 +1,13 @@
+"use client";
+
+import { ThemeProvider } from "next-themes";
+
+import { QueryProvider } from "./query-client-provider";
+
+export function Providers({ children }: { children: React.ReactNode }) {
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <QueryProvider>{children}</QueryProvider>
+    </ThemeProvider>
+  );
+}

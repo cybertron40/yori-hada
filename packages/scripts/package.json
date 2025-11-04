@@ -1,0 +1,30 @@
+{
+  "name": "@recipe-manager/scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "recipe-scripts": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
+    "dev": "tsup src/index.ts --format esm --watch --out-dir dist",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "dotenv-flow": "^4.0.1",
+    "kleur": "^4.1.5",
+    "ora": "^8.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsup": "^7.3.0",
+    "typescript": "^5.4.0",
+    "eslint": "^8.57.0",
+    "vitest": "^1.5.0"
+  }
+}

@@ -8,7 +8,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: true,
-    tsconfigRootDir: __dirname
+    tsconfigRootDir: process.cwd()
   },
   plugins: ["@typescript-eslint", "react", "react-hooks", "jsx-a11y", "tailwindcss"],
   extends: [
